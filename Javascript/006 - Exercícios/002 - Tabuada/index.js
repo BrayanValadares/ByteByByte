@@ -12,7 +12,7 @@
   Obs.: não podemos criar varios consoles.log(multiplicador x 3 = resultado)
 */
 
-const multiplicador = 9;
+const multiplicador = 2;
 
 /* 
   let contador = 0; Este é o ponto de partida do loop.
