@@ -12,12 +12,15 @@
   Obs.: não podemos criar varios consoles.log(multiplicador x 3 = resultado)
 */
 
-const multiplicador = 7;
+const multiplicador = 9;
 
-// Chegará até o valor desejado = 10
-// Ele add + 1 sobre o valor então sempre que acabar o codigo ele add + 1 = 1 + 1 = 2
+/* 
+  let contador = 0; Este é o ponto de partida do loop.
+  contador <= 10; Esta é a condição de continuação do loop. O loop continuará executando enquanto for menor ou igual a 10.
+  contador++: Este é o incremento que ocorre após cada iteração do loop. Ele aumenta o valor do contador em 1 a cada vez que o loop é executado.
+*/
 
-for(let i = 0; i <= 10; i++) {
-  const calc = multiplicador * i;
-  console.log(`${multiplicador} x ${i} = ${calc}`);
+for(let contador = 1; contador <= 10; contador++) {
+    let calculo = multiplicador * contador;
+    console.log(`${multiplicador} x ${contador} = ${calculo}`)
 }
