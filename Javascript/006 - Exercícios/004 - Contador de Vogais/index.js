@@ -13,13 +13,13 @@ let consoantes = {}
 let totalVogais = 0
 let totalConsoantes = 0
 
-for (let char of minhaString) {
-  if (/[aeiou]/.test(char)) {
-    totalVogais++;
-    vogais[char] = (vogais[char] || 0) + 1;
-  } else if (/[bcdfghjklmnpqrstvwxyz]/.test(char)) {
-    totalConsoantes++;
-    consoantes[char] = (consoantes[char] || 0) + 1;
+for (let char of minhaString) { // for of percorre cada caractere da string
+  if (/[aeiou]/.test(char)) { // testa se o caractere é uma vogal
+    totalVogais++; // incrementa o total de vogais
+    vogais[char] = (vogais[char] || 0) + 1; // incrementa o total de vezes que a vogal foi encontrada
+  } else if (/[bcdfghjklmnpqrstvwxyz]/.test(char)) { // testa se o caractere é uma consoante
+    totalConsoantes++;// incrementa o total de consoantes
+    consoantes[char] = (consoantes[char] || 0) + 1; // incrementa o total de vezes que a consoante foi encontrada
   }
 }
 
