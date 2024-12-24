@@ -5,22 +5,22 @@
   exp.: Abacate = { total: x, vogais: [x,y,z] }
 */
 
-let minhaString = "Abacate";
-minhaString = minhaString.toLowerCase().replaceAll(" ", "");
+let minhaString = "Brayan Valadares";
+minhaString = minhaString.toLowerCase();
 
-let somaVogais = {};
-let somaConsoantes = {};
-let totalVogais = 0;
-let totalConsoantes = 0;
+let vogais = {}
+let consoantes = {}
+let totalVogais = 0
+let totalConsoantes = 0
 
 for (let char of minhaString) {
   if (/[aeiou]/.test(char)) {
     totalVogais++;
-    somaVogais[char] = (somaVogais[char] || 0) + 1;
-  } else if (/[bcdfghjklmnprqstvwxyz]/.test(char)) {
+    vogais[char] = (vogais[char] || 0) + 1;
+  } else if (/[bcdfghjklmnpqrstvwxyz]/.test(char)) {
     totalConsoantes++;
-    somaConsoantes[char] = (somaConsoantes[char] || 0) + 1;
+    consoantes[char] = (consoantes[char] || 0) + 1;
   }
 }
 
-console.log({ totalConsoantes, somaConsoantes, totalVogais, somaVogais });
+console.log({minhaString, totalVogais, vogais, totalConsoantes, consoantes})
